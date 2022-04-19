@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide', cursive;
+  
+  
+  }
+  
+  /* customize header */
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(18, 9, 34);
+    height: 80px;
+    width: 100vw;
+    border-bottom: 5px solid #FF0099;
+    animation: AnimateBorder 36s ease infinite;
+  }
+  
+  .headline {
+    position: absolute;
+    left: 48%;
+    color: #00F8FF;
+    bottom: 80%;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    animation: AnimateText 40s ease infinite;
+  }
+  
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* customize NavigationBar */
+  .main-nav ul {
+    margin: 1em 0 .5em;
+    text-align: center;
+  }
+  
+  .main-nav li {
+    display: inline;
+  }
+  
+  .main-nav a {
+    display: inline-block;
+    padding: .5em 1.5em;
+    text-decoration: none;
+    color: #00F8FF;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  }
+  
+  
+  /* customize main */
+  .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* customize footer */
+  .footerContainer {
+    background-color: rgb(18, 9, 34);
+    height: 80px;
+    width: 100vw;
+    border-top: 5px solid #FF0099;
+    animation: AnimateBorder 40s ease infinite;
+  }
+  
+  .tabcontent {
+    background-color: #00F8FF;
+    width: 10vw;
+    height: 50px;
+  }
+  
+  /* customize box1 */
+  #box1 {
+    padding: 10px;
+    height: 50vh;
+    width: 20vw;
+    background-color: none;
+    flex-basis: calc(50% - 40px);
+    animation: AnimateBorder 38s ease infinite;
+  }
+  
+  
+  #imagecontainer1 {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    left: 30%;
+    border: 5px solid #FF0099;
+    margin: -5px;
+    animation: AnimateBorder 38s ease infinite;
+    background-image: url("./img/hangar.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 5px;
+  }
+  
+  #box1header {
+    position: relative;
+    font-size: medium;
+    position: absolute;
+    bottom: -50px;
+    left:30%;
+  }
+  
+  /* customize box2 */
+  #box2 {
+    padding: 10px;
+    height: 20vh;
+    width: 20vw;
+    background: rgba(0, 0, 0, .5);
+    flex-basis: calc(50% - 40px);
+  }
+  
+  #imagecontainer2 {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    left: 30%;
+    border: 5px solid #FF0099;
+    margin: -5px;
+    animation: AnimateBorder 38s ease infinite;
+    background-image: url("./img/cyberswing.png");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 5px;
+    
+  }
+  
+  #box2header {
+    font-size: medium;
+    position: absolute;
+    bottom: -50px;
+    right:30%;
+  }
+  
+  /* customize box3 */
+  #box3 {
+    padding: 10px;
+    height: 80vh;
+    width: 20vw;
+    background: rgba(0, 0, 0, .5);
+    flex-basis: calc(50% - 40px);
+    text-align: right;
+  
+  }
+  
+  /* customize box4 */
+  #box4 {
+    padding: 10px;
+    height: 50vh;
+    width: 20vw;
+    flex-basis: calc(50% - 40px);
+  }
+  
+  /* customize Text */
+  a:hover {
+    color: #FFC400;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  }
+  
+  h1 {
+    color: #FFC400;
+    position: absolute;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  }
+  
+  p {
+    color: #00F8FF;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    animation: AnimateText 40s ease infinite;
+  }
+  
+  
+  
+  /* customize main background */
+  .bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(255, 0, 153, 1) 25%,
+        rgba(0, 0, 0, 1) 51%,
+        rgba(0, 248, 255, 1) 100%);
+    animation: AnimateBG 40s ease infinite;
+  }
+
+  #boxButton{
+      position:absolute;
+      bottom:0px;
+      left: 45%;
+      background-color: rgb(18, 9, 34, 0.1);
+      color: #00F8FF;
+      }
+
+      #boxButton:hover{
+        color: #FFC400;
+      }
+  
+  
+  /* animations */
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%
+    }
+  
+    50% {
+      background-position: 100% 50%
+    }
+  
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  
+  
+  @keyframes AnimateText {
+  
+    0% {
+      color: #FF0099;
+    }
+  
+    50% {
+      color: #00F8FF;
+    }
+  
+    100% {
+      color: #FF0099;
+    }
+  
+  }
+  
+  
+  
+  @keyframes AnimateBorder {
+  
+    0% {
+      border-color: #FF0099;
+    }
+  
+    50% {
+      border-color: #00F8FF;
+    }
+  
+    100% {
+      border-color: #FF0099;
+    }
+  
+  }
